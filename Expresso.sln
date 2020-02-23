@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expresso.Android", "Express
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expresso.iOS", "Expresso.iOS\Expresso.iOS.csproj", "{B5735064-EBEF-4B33-96D7-B5E95DCF101A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expresso", "Expresso\Expresso.csproj", "{3DED925E-BDA4-4346-B8F0-4850022E7B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expresso", "Expresso\Expresso.csproj", "{3DED925E-BDA4-4346-B8F0-4850022E7B7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
