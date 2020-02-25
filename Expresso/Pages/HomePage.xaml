@@ -4,9 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:pages="clr-namespace:Expresso.Pages;assembly=Expresso"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
-             x:Class="Expresso.Pages.HomePage">
-  <!--Pages can be added as references or inline-->
-<pages:MenuPage Title="Menu"/>
+             x:Class="Expresso.Pages.HomePage"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <!--Pages can be added as references or inline-->
+<pages:MenuPage Title="Menu" IconImageSource="menu.png" />
+    <pages:Reservation Title="Reservation" IconImageSource="reservation.png"></pages:Reservation>
+    <pages:InfoPage Title="Information" IconImageSource="information.png"></pages:InfoPage>
 
 </TabbedPage>

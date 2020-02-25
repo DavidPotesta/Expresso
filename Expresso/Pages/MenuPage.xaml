@@ -6,10 +6,18 @@
              mc:Ignorable="d"
              x:Class="Expresso.Pages.MenuPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to the Menu Page!!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView SeparatorVisibility="None" HasUnevenRows="True" x:Name="LvMenu" ItemSelected="LvMenu_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Image Source="{Binding Image}" HeightRequest="200" Aspect="Fill"/>
+                            <BoxView BackgroundColor="Black" Opacity="0.4" />
+                            <Label Text="{Binding Name}" FontSize="Large" TextColor="White" HorizontalOptions="Center" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
