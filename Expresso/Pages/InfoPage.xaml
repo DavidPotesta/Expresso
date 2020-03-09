@@ -7,9 +7,41 @@
              x:Class="Expresso.Pages.InfoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the Info Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Timings" TextColor="Black" HorizontalOptions="Center" FontSize="Large"></Label>
+            <Label Text="Mon-Thurs: 9:00am - 11:00pm" HorizontalOptions="Center" FontSize="Medium"></Label>
+            <Label Text="Fri-Sat: 9:00am - 1:00pm" HorizontalOptions="Center" FontSize="Medium"></Label>
+            <Label Text="Sun: 9:00am - 1:00pm" HorizontalOptions="Center" FontSize="Medium"></Label>
+            <Label Text="Address" HorizontalOptions="Center" FontSize="Large" TextColor="Black"></Label>
+            <Label Text="808 S State St, Chicago, IL 60606" HorizontalOptions="Center" FontSize="Medium"></Label>
+            <Label Text="Follow Us" HorizontalOptions="Center" FontSize="Large" TextColor="Black"></Label>
+            <StackLayout HorizontalOptions="Center" Margin="5" Orientation="Horizontal">
+                <Image Source="facebook.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="tapFacebook" NumberOfTapsRequired="1" Tapped="tapFacebook_Tapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="twitter.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="tapTwitter" NumberOfTapsRequired="1" Tapped="tapTwitter_Tapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="instagram.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="tapInstagram" NumberOfTapsRequired="1" Tapped="tapInstagram_Tapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="youtube.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="tapYoutube" NumberOfTapsRequired="1" Tapped="tapYoutube_Tapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <Label Text="Contact Us" HorizontalOptions="Center" FontSize="Large" TextColor="Black"></Label>
+            <Image Source="phone.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="tapPhone" NumberOfTapsRequired="1" Tapped="tapPhone_Tapped"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

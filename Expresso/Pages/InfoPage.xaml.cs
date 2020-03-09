@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +11,31 @@ namespace Expresso.Pages
         public InfoPage()
         {
             InitializeComponent();
+        }
+
+        private void tapFacebook_Tapped(object sender, EventArgs e)
+        {
+            Launcher.OpenAsync(new Uri("https://www.facebook.com/ContrastCoffeeIronwood"));
+        }
+
+        private void tapTwitter_Tapped(object sender, EventArgs e)
+        {
+            Launcher.OpenAsync(new Uri("https://twitter.com/contrastcoffee?lang=en"));
+        }
+
+        private void tapInstagram_Tapped(object sender, EventArgs e)
+        {
+            Launcher.OpenAsync(new Uri("https://www.instagram.com/contrastcoffee/"));
+        }
+
+        private void tapYoutube_Tapped(object sender, EventArgs e)
+        {
+            Launcher.OpenAsync(new Uri("https://www.youtube.com/watch?v=moVO9Ve4zRo"));
+        }
+
+        private void tapPhone_Tapped(object sender, EventArgs e)
+        {
+            PhoneDialer.Open("9064515662");
         }
     }
 }

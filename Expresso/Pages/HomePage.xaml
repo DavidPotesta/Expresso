@@ -11,7 +11,7 @@
 
     <!--Pages can be added as references or inline-->
 <pages:MenuPage Title="Menu" IconImageSource="menu.png" />
-    <pages:Reservation Title="Reservation" IconImageSource="reservation.png"></pages:Reservation>
+    <pages:ReservationPage Title="Reservation" IconImageSource="reservation.png"></pages:ReservationPage>
     <pages:InfoPage Title="Information" IconImageSource="information.png"></pages:InfoPage>
 
 </TabbedPage>
