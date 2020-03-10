@@ -7,7 +7,9 @@
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              mc:Ignorable="d"
              x:Class="Expresso.Pages.HomePage"
-             android:TabbedPage.ToolbarPlacement="Bottom">
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             android:TabbedPage.BarSelectedItemColor="Yellow" BarBackgroundColor="#f50057"
+             android:TabbedPage.BarItemColor="White" Title="Contrast Coffee">
 
     <!--Pages can be added as references or inline-->
 <pages:MenuPage Title="Menu" IconImageSource="menu.png" />

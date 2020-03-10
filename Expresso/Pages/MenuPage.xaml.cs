@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 using Menu = Expresso.Models.Menu;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Expresso.Services;
-using Expresso.Models;
 
 namespace Expresso.Pages
 {
@@ -34,6 +28,7 @@ namespace Expresso.Pages
                     Menus.Add(menu);
                 }
                 LvMenu.ItemsSource = Menus;
+                indicatorBusy.IsRunning = false;
             }
 
             First = false;
@@ -42,7 +37,12 @@ namespace Expresso.Pages
         private void LvMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var selectedMenu = e.SelectedItem as Menu;
-            Navigation.PushAsync(new SubMenuPage(selectedMenu));
+            if(selectedMenu != null)
+            { 
+                Navigation.PushAsync(new SubMenuPage(selectedMenu)); 
+            }
+            ((ListView)sender).SelectedItem = null;
+            
         }
     }
 }

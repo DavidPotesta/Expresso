@@ -6,6 +6,8 @@
              mc:Ignorable="d"
              x:Class="Expresso.App">
     <Application.Resources>
-
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#f50057"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
